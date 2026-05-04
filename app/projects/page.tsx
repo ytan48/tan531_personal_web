@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FadeInSection } from "@/components/FadeInSection";
 import { ProjectCard } from "@/components/ProjectCard";
 import { siteContent } from "@/data/siteContent";
@@ -7,16 +6,18 @@ import styles from "./page.module.css";
 const { featuredProjects, moreProjects } = siteContent;
 
 export default function ProjectsPage() {
+  const staticBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   return (
     <main className={styles.page}>
       <div className={styles.shell}>
         <FadeInSection className={styles.topBar}>
-          <Link className={styles.backLink} href="/">
+          <a className={styles.backLink} href={`${staticBasePath}/`}>
             Back to home
-          </Link>
-          <Link className={styles.contactLink} href="/#contact">
+          </a>
+          <a className={styles.contactLink} href={`${staticBasePath}/#contact`}>
             Contact
-          </Link>
+          </a>
         </FadeInSection>
 
         <FadeInSection className={styles.hero} delayMs={60}>

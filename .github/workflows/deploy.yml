@@ -38,6 +38,9 @@ jobs:
           REPO_NAME: ${{ github.event.repository.name }}
         run: npm run build
 
+      - name: Preserve _next assets on GitHub Pages
+        run: touch ./out/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

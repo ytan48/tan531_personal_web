@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { FadeInSection } from "@/components/FadeInSection";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -140,7 +139,7 @@ export default function Home() {
           </FadeInSection>
 
           <div className={styles.anchor} id="education" />
-          <FadeInSection className={`${styles.section} ${styles.educationSection}`}>
+          <FadeInSection className={styles.section}>
             <div className={styles.sectionHeader}>
               <div>
                 <span className={styles.eyebrow}>Education</span>
@@ -179,7 +178,7 @@ export default function Home() {
           </FadeInSection>
 
           <div className={styles.anchor} id="experience" />
-          <FadeInSection className={`${styles.section} ${styles.experienceSection}`}>
+          <FadeInSection className={styles.section}>
             <div className={styles.sectionHeader}>
               <div>
                 <span className={styles.eyebrow}>Experience</span>
@@ -211,9 +210,12 @@ export default function Home() {
               ))}
             </div>
             <div className={styles.sectionActions}>
-              <Link className={styles.secondaryButton} href="/projects">
+              <a
+                className={styles.secondaryButton}
+                href={`${staticBasePath}/projects/`}
+              >
                 Browse more projects
-              </Link>
+              </a>
             </div>
           </FadeInSection>
 

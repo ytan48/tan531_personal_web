@@ -1,9 +1,8 @@
 import type { NextConfig } from "next";
 
 const repository = process.env.GITHUB_REPOSITORY;
-const defaultProjectRepo = "tan531";
 const repoName =
-  process.env.REPO_NAME ?? repository?.split("/")[1] ?? defaultProjectRepo;
+  process.env.REPO_NAME ?? repository?.split("/")[1] ?? "";
 const isGitHubPages =
   process.env.GITHUB_PAGES === "true" ||
   process.env.GITHUB_ACTIONS === "true" ||
