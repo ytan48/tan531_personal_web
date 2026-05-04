@@ -96,7 +96,7 @@ export default function Home() {
 
         <div className={styles.sections}>
           <div className={styles.anchor} id="about" />
-          <FadeInSection className={`${styles.sectionCard} ${styles.aboutSection}`}>
+          <FadeInSection className={`${styles.section} ${styles.aboutSection}`}>
             <div className={styles.aboutGrid}>
               <div className={styles.aboutCopy}>
                 <div className={`${styles.sectionHeader} ${styles.aboutHeader}`}>
@@ -135,27 +135,12 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-
-                <details className={styles.funFactsPanel}>
-                  <summary className={styles.funFactsSummary}>
-                    <span className={styles.funFactsEyebrow}>Fun facts</span>
-                    <span className={styles.funFactsPrompt}>A few things beyond data</span>
-                  </summary>
-
-                  <ul className={styles.funFactsList}>
-                    {about.funFacts.map((fact) => (
-                      <li key={fact} className={styles.funFactsItem}>
-                        {fact}
-                      </li>
-                    ))}
-                  </ul>
-                </details>
               </aside>
             </div>
           </FadeInSection>
 
           <div className={styles.anchor} id="education" />
-          <FadeInSection className={`${styles.sectionCard} ${styles.educationSection}`}>
+          <FadeInSection className={`${styles.section} ${styles.educationSection}`}>
             <div className={styles.sectionHeader}>
               <div>
                 <span className={styles.eyebrow}>Education</span>
@@ -194,7 +179,7 @@ export default function Home() {
           </FadeInSection>
 
           <div className={styles.anchor} id="experience" />
-          <FadeInSection className={`${styles.sectionCard} ${styles.experienceSection}`}>
+          <FadeInSection className={`${styles.section} ${styles.experienceSection}`}>
             <div className={styles.sectionHeader}>
               <div>
                 <span className={styles.eyebrow}>Experience</span>
@@ -206,7 +191,7 @@ export default function Home() {
           </FadeInSection>
 
           <div className={styles.anchor} id="projects" />
-          <FadeInSection className={`${styles.sectionCard} ${styles.projectsSection}`}>
+          <FadeInSection className={`${styles.section} ${styles.projectsSection}`}>
             <div className={styles.sectionHeader}>
               <div>
                 <span className={styles.eyebrow}>Projects</span>
@@ -233,7 +218,7 @@ export default function Home() {
           </FadeInSection>
 
           <div className={styles.anchor} id="activities" />
-          <FadeInSection className={`${styles.sectionCard} ${styles.activitiesSection}`}>
+          <FadeInSection className={`${styles.section} ${styles.activitiesSection}`}>
             <div className={styles.sectionHeader}>
               <div>
                 <span className={styles.eyebrow}>Activities</span>
@@ -258,7 +243,7 @@ export default function Home() {
           </FadeInSection>
 
           <div className={styles.anchor} id="contact" />
-          <FadeInSection className={`${styles.contactCard} ${styles.contactSection}`}>
+          <FadeInSection className={`${styles.section} ${styles.contactSection}`}>
             <div>
               <span className={styles.eyebrow}>Contact</span>
               <h2 className={styles.sectionTitle}>Open to analyst and data science roles.</h2>

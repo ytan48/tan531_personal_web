@@ -50,17 +50,6 @@ export const siteContent: SiteContent = {
       "Machine Learning",
       "Statistical Analysis / Modeling",
     ],
-    funFacts: [
-      "I can speak both Cantonese and Mandarin.",
-      "I am based in Chicago.",
-      "Outside of analytics, I enjoy playing billiards.",
-    ],
-    principles: [
-      "Start with the decision, not the chart.",
-      "Prefer interpretable methods when they are good enough.",
-      "Keep dashboards sparse, readable, and tied to actions.",
-      "Document assumptions so future updates stay maintainable.",
-    ],
   },
   education: [
     {
