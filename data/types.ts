@@ -66,10 +66,30 @@ export type ActivityItem = {
   description: string;
 };
 
+export type CourseItem = {
+  code: string;
+  title: string;
+  // Add githubHref later when a course-specific repo is available.
+  githubHref?: string;
+};
+
+export type CourseCategory = {
+  title: string;
+  description: string;
+  courses: CourseItem[];
+};
+
+export type CoursesContent = {
+  intro: string;
+  note: string;
+  categories: CourseCategory[];
+};
+
 export type SiteContent = {
   profile: SiteProfile;
   about: AboutContent;
   education: EducationItem[];
+  courses: CoursesContent;
   experience: ExperienceItem[];
   activities: ActivityItem[];
   featuredProjects: ProjectItem[];

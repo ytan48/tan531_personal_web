@@ -67,6 +67,62 @@ export const siteContent: SiteContent = {
       ],
     },
   ],
+  courses: {
+    intro:
+      "Selected UIUC coursework that built my foundation in statistical reasoning, applied modeling, machine learning, and quantitative problem solving.",
+    note: "All courses listed below were taken at the University of Illinois Urbana-Champaign.",
+    // Add githubHref to any course item later to make the course title clickable.
+    categories: [
+      {
+        title: "Applied Statistics & Computing",
+        description:
+          "Modeling, data management, statistical programming, and advanced analytical practice.",
+        courses: [
+          { code: "STAT 385", title: "Statistics Programming Methods" },
+          { code: "STAT 425", title: "Statistical Modeling I" },
+          { code: "STAT 440", title: "Statistical Data Management" },
+          { code: "STAT 448", title: "Advanced Data Analysis" },
+        ],
+      },
+      {
+        title: "Data Science & Statistical Learning",
+        description:
+          "Exploratory data science, predictive modeling, and learning-focused coursework.",
+        courses: [
+          { code: "STAT 107", title: "Data Science Discovery" },
+          { code: "STAT 207", title: "Data Science Exploration" },
+          { code: "CS 307", title: "Modeling and Learning in Data Science" },
+          { code: "STAT 432", title: "Basics of Statistical Learning" },
+        ],
+      },
+      {
+        title: "Statistical Core",
+        description:
+          "Probability, introductory statistics, and the theoretical backbone behind analytical work.",
+        courses: [
+          { code: "STAT 100", title: "Statistics" },
+          { code: "STAT 400", title: "Statistics and Probability I" },
+          { code: "STAT 410", title: "Statistics and Probability II" },
+        ],
+      },
+      {
+        title: "Mathematical & Economic Foundations",
+        description:
+          "Linear algebra, calculus, and economics that support quantitative reasoning and business context.",
+        courses: [
+          { code: "MATH 220", title: "Calculus" },
+          { code: "MATH 231", title: "Calculus II" },
+          { code: "MATH 241", title: "Calculus III" },
+          {
+            code: "MATH 257",
+            title: "Linear Algebra with Computational Applications",
+          },
+          { code: "ECON 102", title: "Microeconomic Principles" },
+          { code: "ECON 103", title: "Macroeconomic Principles" },
+        ],
+      },
+    ],
+  },
   experience: [
     {
       role: "Data Analyst Intern",

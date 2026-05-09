@@ -15,6 +15,9 @@ export default function ProjectsPage() {
           <a className={styles.backLink} href={`${staticBasePath}/`}>
             Back to home
           </a>
+          <a className={styles.contactLink} href={`${staticBasePath}/courses/`}>
+            Courses
+          </a>
           <a className={styles.contactLink} href={`${staticBasePath}/#contact`}>
             Contact
           </a>

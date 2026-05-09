@@ -6,17 +6,17 @@ import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 import { siteContent } from "@/data/siteContent";
 import styles from "./page.module.css";
 
-const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Education", href: "#education" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Activities", href: "#activities" },
-  { label: "Contact", href: "#contact" },
-];
-
 export default function Home() {
   const staticBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  const navItems = [
+    { label: "About", href: "#about" },
+    { label: "Education", href: "#education" },
+    { label: "Experience", href: "#experience" },
+    { label: "Projects", href: "#projects" },
+    { label: "Courses", href: `${staticBasePath}/courses/` },
+    { label: "Activities", href: "#activities" },
+    { label: "Contact", href: "#contact" },
+  ];
   const {
     profile,
     about,
